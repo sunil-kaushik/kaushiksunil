@@ -1,71 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunil Kaushik | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunil Kaushik - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <!-- ===== Navbar ===== -->
-  <header>
-    <nav>
-      <h1>Sunil Kaushik</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-gray-700">Sunil Kaushik</h1>
+      <nav>
+        <ul class="flex space-x-6 font-semibold">
+          <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero">
-    <h2>Team Lead | Operations & Data Analytics | Business Process Management</h2>
-    <p>Short tagline or intro goes here. You can add your career goal or a motivational line.</p>
-  </section>
-
-  <!-- ===== About ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>[Write 2–3 sentences about yourself here — your background, strengths, and what you’re passionate about.]</p>
-  </section>
-
-  <!-- ===== Resume ===== -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>You can download my updated resume from the link below:</p>
-    <a href="#" class="btn">Download Resume</a>
-  </section>
-
-  <!-- ===== Projects ===== -->
-  <section id="projects">
-    <h2>Projects & Achievements</h2>
-    <div class="project">
-      <h3>Project Title 1</h3>
-      <p>Brief description of project/achievement.</p>
+  <!-- Home Section -->
+  <section id="home" class="pt-24 pb-16 max-w-6xl mx-auto px-6">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-2">Sunil Kaushik</h2>
+      <p class="text-gray-600">Team Lead | Operations & Business Process Management</p>
+      <p class="text-gray-500 mt-2">📍 Gurugram, Haryana | ✉️ sunilkaushikbpm@gmail.com | 📞 +91 9992991880</p>
+      <div class="mt-4">
+        <a href="Sunil_Kaushik_CV.pdf" download class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">⬇️ Download CV</a>
+      </div>
     </div>
-    <div class="project">
-      <h3>Project Title 2</h3>
-      <p>Brief description of project/achievement.</p>
-    </div>
-    <div class="project">
-      <h3>Project Title 3</h3>
-      <p>Brief description of project/achievement.</p>
+
+    <!-- Education + Certifications -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">Education & Certifications</h3>
+      <div class="mt-6 space-y-4">
+        <p><span class="font-semibold">🎓 Bachelor of Science, Medical Studies</span> – Chaudhary Ranbir Singh University (2022)</p>
+        <ul class="list-disc ml-6 text-gray-700">
+          <li>Google Digital Marketing – Google (2022)</li>
+          <li>Data Analysis Using Microsoft Excel – Coursera (2022)</li>
+          <li>Business Analysis & Process Management – Coursera (2024)</li>
+        </ul>
+      </div>
     </div>
   </section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="#" target="_blank">github.com/yourusername</a></p>
+  <!-- Experience Section -->
+  <section id="experience" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">Experience</h3>
+      <div class="mt-6 space-y-6">
+        <div>
+          <h4 class="font-bold">Team Lead – Operations & BPM | EZ Works (2025–Present)</h4>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Spearheading operations optimization initiatives while mentoring junior team members.</li>
+            <li>Collaborating with Project Managers for tool alignment and workflow continuity.</li>
+            <li>Driving SOP development, QA, and strategic reporting.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Senior Executive – Operations & BPM | EZ Works (2024)</h4>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Streamlined workflows improving service delivery by 20%.</li>
+            <li>Recruited language experts internationally.</li>
+            <li>Led training sessions on translation tools and protocols.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Executive – Operations & BPM | EZ Works (2023)</h4>
+          <ul class="list-disc ml-6 text-gray-700">
+            <li>Coordinated 70+ service lines, managed vendors and invoicing accuracy.</li>
+            <li>Ensured client SLAs with clear communication and efficient execution.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Sunil Kaushik. All Rights Reserved.</p>
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">Operations Management</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">Data Analysis (Excel, SQL)</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">Power BI & Looker Studio</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">Workflow Optimization</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">Vendor Management</span>
+        <span class="px-4 py-2 bg-white rounded-lg shadow text-center">SOP Creation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-2xl font-semibold border-b-2 border-blue-600 inline-block pb-1">Key Projects</h3>
+      <div class="mt-6 space-y-6">
+        <div>
+          <h4 class="font-bold">Large-Scale Translation Project (2024)</h4>
+          <p class="text-gray-700">Coordinated 15+ experts with CAT tool memoQ, delivering 4x word count beyond limits while maintaining client satisfaction.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Power BI Dashboard Development (2023)</h4>
+          <p class="text-gray-700">Developed interactive dashboards improving reporting efficiency by 30% and enabling better decision-making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>© 2025 Sunil Kaushik. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
